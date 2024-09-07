@@ -10,7 +10,6 @@ import IndiaMap from './components/IndiaMap';
 import MadhyaPradesh from './components/States/MadhyaPradesh';
 
 
-
 function App() {
   return (
     <div className="App">

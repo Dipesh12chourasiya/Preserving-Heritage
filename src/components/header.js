@@ -1,12 +1,35 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Image } from 'react-bootstrap';
 
 function AppHeader() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Indian Culture</Navbar.Brand>
+      <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            style={{
+              height:'45px',
+              width: "55px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              objectFit: "contain",
+              marginRight: "15px",
+            }}
+            src={require("../assets/mainLogo.png")}
+          />
+          <h3 style={{ color: "white", position: "relative", top: "10px" }}>
+            <b>Golden Bird</b>
+          </h3>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
